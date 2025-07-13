@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+}
+
+body {
+    background-color: #fffcee;
+}
+
+header {
+    background-color: white;
+    padding: 10px 30px;
+}
+
+.logo-container h1 {
+    font-size: 24px;
+}
+
+.logo-container .orange {
+    color: orange;
+    font-weight: bold;
+}
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 10px;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-box h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.login-box p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.required {
+    color: red;
+}
+
+input[type="email"],
+input[typ="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input[type="password"],
+.password-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    padding-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.click-area {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 16px;
+}
+
+.forgot-password a {
+    font-size: 13px;
+    color: #666;
+    text-decoration: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.login-btn {
+    background-color: #30c550;
+    color: white;
+}
+
+.daftar-btn {
+    background-color: #e8ffe8;
+    color: #1c871c;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #888;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+}
+
+.google-btn {
+    background-color: white;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.google-icon {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+    .login-box {
+        padding: 20px;
+        margin: 0 15px;
+    }
+
+    .login-box h2 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .divider {
+        font-size: 13px;
+    }
+
+    .password-container input {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        padding: 15px;
+    }
+
+    .logo-img {
+        height: 32px;
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .toogle-password {
+        right: 8px;
+        font-size: 16px;
+    }
+}

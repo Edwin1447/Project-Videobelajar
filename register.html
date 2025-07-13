@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/asset/css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="/asset/img/Logo 1.png" alt="logo-videobelajar" class="logo-img">
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Pendaftaran Akun</h2>
+            <p>Yuk, daftarkan akunmu sekarang juga!</p>
+
+            <form>
+                <label>Nama Lengkap <span class="required">*</span></label>
+                <input type="text" id="text" required />
+
+                <label>E-Mail <span class="required">*</span></label>
+                <input type="email" id="email" required />
+
+                <label>No. Hp *</label>
+                <div class="phone-group">
+                    <div class="phone-group">
+                        <img src="https://flagcdn.com/w40/id.png" alt="ID Flag">
+                        <select>
+                            <option value="+62">+62</option>
+                            <option value="+60">+60</option>
+                            <option value="+65">+65</option>
+                        </select>
+                    </div>
+                    <input type="text" placeholder="" required />
+                </div>
+
+                <label for="password">Kata Sandi <span class="required">*</span></label>
+                <div class="password-container">
+                    <input type="password" id="password" required />
+                    <div class="click-area" onclick="tooglePassword()"></div>
+                </div>
+
+                <label for="password">Konfirmasi Password <span class="required">*</span></label>
+                <div class="password-container">
+                    <input type="password" id="password" required />
+                    <div class="click-area" onclick="togglePassword()"></div>
+                </div>
+
+                <div class="forgot">Lupa Password?</div>
+
+                <button type="submit" class="btn-submit">Daftar</button>
+                <button type="button" class="btn-login">Masuk</button>
+
+                <div class="divider">atau</div>
+
+                <button type="button" class="btn-google">
+                    <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Google Icon" />
+                    Daftar dengan Google
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        function togglePass(id) {
+            const input = document.getElementById(id);
+            input.type = input.type === 'password' ? 'text' : 'password';
+        }
+    </script>
+</body>
+</html>
